@@ -36,7 +36,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/thushalya",
   linkedin: "https://www.linkedin.com/in/thushalya-weerasuriya/",
-  gmail: "thushalya.19@cse.mrt.ac.lk",
+  gmail: "thushalya.19@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/saad.pasta7",
   medium: "https://medium.com/@thushalya",
@@ -238,8 +238,14 @@ const workExperiences = {
       role: "Software Engineer",
       company: "Crytec-Labs",
       companylogo: require("./assets/images/crytec_labs_logo.jpeg"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "August 2022 – Oct 2023",
+      desc: "Lead a skilled team of developers committed to dynamic and user-friendly applications, Proficient in both front-end and back-end development.",
+      descBullets: [
+        "Travel Up mobile application"
+        , "Miha Institute Tuition Application",
+        "Flutter | Microservices | Node.js, HTML | CSS | JavaScript | Typescript | Angular | RxJs | NgRx | React | Nodejs | PostgreSQL | Graphql |REST | Lodash | OAuth | Amazon Cognito | Microservices Architecture | Serverless | Kafka"
+
+      ]
     },
     {
       role: "Software Engineer",
@@ -269,31 +275,82 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "My passion is about solving problems. Please give me a problem to solve",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Fyp.png"),
+      projectName: "AiLERT Final Year project",
+      projectDesc: "Detect hate speech using Twitter data, we employ a novel approach that integrates dual contrastive learning with emotion analysis, author profiling, and transfer learning to enhance the F1 score. Our method utilizes dual contrastive learning to better distinguish between hate speech and non-hate speech, while emotion analysis helps capture the nuanced emotional context of tweets. Author profiling adds an additional layer by considering the user's historical behavior and tendencies, and transfer learning enables the model to adapt and improve its performance on various datasets. This comprehensive approach aims to significantly increase the accuracy and reliability of hate speech detection on Twitter.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://huggingface.co/spaces/Thushalya/AiLERT"
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/pasan-SK/AiLERT-FYP"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "foodie",
+      projectDesc: "Social Media Application to Store Memories of Travelling for Food",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://foodie1999.netlify.app/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/asyncapi.png"),
+      projectName: "Ballerina Websocket to AsyncAPI definition and otherway round ",
+      projectDesc: "Research and generate a CMD tool to convert Ballerina Websocket service into AsyncAPI specification and convert that AsyncAPI specification to Ballerina Websocket client and service. Contribute to the Ballerina Websocket by mapping “dispatcherStreamId” functionality. 268 commits/ 210+ test cases / 200K+ code lines. Java | Ballerina | AsyncAPI | OpenAPI | Gradle | Jackson | Apicurio | TestNG | Queues",
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/thushalya/asyncapi-tools"
         }
       ]
-    }
+    },
+    {
+      image: require("./assets/images/crypstoxplorer.png"),
+      projectName: "Market Data Explorer System (CryptoCurrencies and Stocks) ",
+      projectDesc: "Our platform, Crypstoxplorer, enables users to effortlessly view and analyze cryptocurrency and stock market data with key features such as real-time candlestick and line charts using data from the Binance Websocket, historical stock price data sourced from Kaggle, and a watchlist with real-time alerts powered by Firebase Notification Service. It seamlessly integrates a React frontend with a Flask backend, employing an efficient publisher-subscriber design pattern where the Binance Websocket acts as the publisher and the backend serves as the broker. During this project, we utilized resources like Firebase Cloud Messaging, Flask server, WebSocket, Docker, Amazon EC2, Progressive Web Apps (PWA), React.js, and MongoDB.",
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/SEP-Group-28"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/mosip.png"),
+      projectName: "Mosip",
+      projectDesc: "The Mosip Student Management System is a project designed for efficient student administration, employing Spring Boot for a robust backend infrastructure.",
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/cse-mosip"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/chromextension.png"),
+      projectName: "Chatgpt Prompt Engineering Chrome Extension",
+      projectDesc: "ChatGPT Chrome Extension, from this application you can effortlessly store your frequent using prompts engage in dynamic conversations, and obtain instant assistance, all without leaving your favorite browser. You can categorize them into different categories using their topics as well as subcategories.With this ChatGPT Chrome Extension, you can effortlessly store your frequent using prompts engage in dynamic conversations, and obtain instant assistance, all without leaving your favorite browser. You can categorize them into different categories using their topics as well as subcategories. Technologies used :- JavaScript · HTML5 · Cascading Style Sheets (CSS)",
+      footerLink: [
+        // {
+        //   name: "Visit Website",
+        //   url: "https://foodie1999.netlify.app/"
+        // }
+        //  you can add extra buttons here.
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -310,48 +367,166 @@ const achievementSection = {
     {
       title: "1st place in RealHack5.0 Competition 2023",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Our team, 'Encounters' representing the University of Moratuwa, secured First place in the 2024 RealHack 5.0 Competition, surpassing over 300+ other teams.",
+      image: require("./assets/images/encounters.jpeg"),
+      // imageAlt: "Google Code-In Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "3rd place at Idealize 2023",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Team Nerexco Developers has secured the prestigious title of second runners-up, at Idealize 2023!",
+      image: require("./assets/images/team_nerexco.jpeg"),
+      // imageAlt: "Google Code-In Logo",
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
+    {
+      title: "AI Mastery Award -Idealize 2023",
+      subtitle:
+        "Team Nerexco achieved AI mastery award among 150+ teams",
+      image: require("./assets/images/AI_mastery_award.jpeg"),
+      // imageAlt: "Google Code-In Logo",
+      footerLink: [
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
+    {
+      title: "5th place in Datacom Networking Competition 2023 ",
+      subtitle:
+        "3-hour Computer/ telecommunication networking competition.",
+      // image: require("./assets/images/crypto_knights.jpeg"),
+      // imageAlt: "Google Code-In Logo",
+      footerLink: [
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
+    {
+      title: "9th Place in CyberZee’23 Competition",
+      subtitle:
+        "Crypto Knights, our team, secured the 9th position, making it to the semifinals among more than 40 teams. The competition included individual quiz rounds for each team member and a group quiz for the entire team.",
+      image: require("./assets/images/crypto_knights.jpeg"),
+      // imageAlt: "Google Code-In Logo",
+      footerLink: [
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
+    {
+      title: "Huawei ICT networking competition",
+      subtitle:
+        "55th place in the Huawei ICT networking competition",
+      // image: require("./assets/images/crypto_knights.jpeg"),
+      // imageAlt: "Google Code-In Logo",
+      footerLink: [
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
+    {
+      title: "Taxila Central College -Competitions",
+      subtitle:
+        "3 times Section first in Advance level Mathematics Stream, 3 times Highest grade in Physics, Combined mathematics Stream, Attend 2017 Vishaka Maha Vidyalaya Quiz competition, Winners of 2017 Vidya Exhibition (Paramount Quiz competition) made by University of Kelaniya among 26 schools Runners up in 2017 University of Moratuwa TLM Quiz competition",
+      image: require("./assets/images/paramount.jpeg"),
+      // imageAlt: "Google Assistant Action Logo",
+      footerLink: [
+        // {
+        //   name: "View Google Assistant Action",
+        //   url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        // }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Azure Fundamentals",
+      subtitle: "Certifcation of AZ-900",
+      image: require("./assets/images/AZ900.png"),
+      // imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        // {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Credentials",
+          url: "https://learn.microsoft.com/en-us/users/thushalyaweerasuriya-5655/credentials/7c819fe3915ca6c3?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+        }
+      ]
+    },
+    {
+      title: "Azure AI Fundamentals",
+      subtitle: "Certifcation of AI-900",
+      image: require("./assets/images/AI900.png"),
+      // imageAlt: "PWA Logo",
+      footerLink: [
+        // {name: "Certification", url: ""},
+        {
+          name: "Credentials",
+          url: "https://learn.microsoft.com/en-us/users/ThushalyaWeerasuriya-5655/credentials/4CFB18324D8CAA50?ref=https%3A%2F%2Fwww.linkedin.com%2F"
         }
       ]
     }
@@ -427,7 +602,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Discuss a project or just want to say hi? My Inbox is open for all. 'https://github.com/thushalya'",
   number: "+94754365392",
   email_address: "thushalya.19@gmail.com"
 };
@@ -436,7 +611,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "thushalya", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false// Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
