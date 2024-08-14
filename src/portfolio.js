@@ -294,7 +294,7 @@ const bigProjects = {
       ]
     },
     {
-      // image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/foodie.png"),
       projectName: "foodie",
       projectDesc: "Social Media Application to Store Memories of Travelling for Food",
       footerLink: [
